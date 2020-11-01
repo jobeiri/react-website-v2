@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./App.css";
 import Navbar from "./components/Navbar";
+import Home from "./components/pages/HomePage/Home";
+import "./App.css";
 
 // useless - work with this piece of code
 /*
@@ -15,7 +16,7 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route path="/" />
+        <Route path="/" exact component={Home} />
       </Switch>
     </BrowserRouter>
   );
